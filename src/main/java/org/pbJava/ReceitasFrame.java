@@ -21,7 +21,9 @@ public class ReceitasFrame extends JFrame {
         JButton btnCliqueAqui = new JButton("Clique Aqui");
         btnCliqueAqui.setBounds(125,200,150,30);
         add(btnCliqueAqui);
-
+        btnCliqueAqui.addActionListener((e) -> {
+            JOptionPane.showMessageDialog(this,"Olá " + txtNome.getText() + "!");
+        });
 
 
     }
