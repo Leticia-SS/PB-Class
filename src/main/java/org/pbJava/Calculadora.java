@@ -8,7 +8,7 @@ public class Calculadora {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Calculadora");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(300,250);
+        frame.setSize(600,600);
         frame.setLocationRelativeTo(null);
 
 
@@ -57,7 +57,7 @@ public class Calculadora {
                 if (e.getSource()==potencia)
                     res = Math.pow(num1,num2);
                 if (e.getSource()==raizQuadrada)
-                    res = Math.sqrt(num1);
+                    res = Math.pow(num1,1.0/num2);
                 resultado.setText("Resultado = " + res);
             } catch (NumberFormatException ex) {
                 resultado.setText("Entrada Inválida");
@@ -68,6 +68,8 @@ public class Calculadora {
         subtrair.addActionListener(operacao);
         multiplicar.addActionListener(operacao);
         dividir.addActionListener(operacao);
+        raizQuadrada.addActionListener(operacao);
+        potencia.addActionListener(operacao);
 
         frame.setVisible(true);
 

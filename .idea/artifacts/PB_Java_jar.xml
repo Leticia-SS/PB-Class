@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PB-Java:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PB_Java_jar</output-path>
+    <root id="archive" name="PB-Java.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="PB-Java" />
+    </root>
+  </artifact>
+</component>
